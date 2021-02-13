@@ -1,8 +1,7 @@
 module Api
   module V1
     class PostsController < ApplicationController
-      before_action :set_post, only:[:show, :update, :destroy]
-      skip_before_action :verify_authenticity_token
+      before_action :set_post, only: [:show, :update, :destroy]
 
       def index
         posts = Post.order(created_at: :desc)
@@ -45,5 +44,5 @@ module Api
         params.require(:post).permit(:title)
       end
     end
-  end  
+  end
 end
