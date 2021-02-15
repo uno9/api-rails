@@ -1,0 +1,5 @@
+# create todo
+# curl -X POST 'http://localhost:3000/api/v1/posts' -H "Content-Type: application/json" -d '{"post":{"title":"aaa","description":"bbb","limit":"2021-01-22"}}'
+
+# get post index
+# curl -X GET 'http://localhost:3000/api/v1/posts'
