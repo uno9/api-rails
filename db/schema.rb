@@ -14,6 +14,8 @@ ActiveRecord::Schema.define(version: 2021_02_09_100255) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
+    t.string "comment"
+    t.datetime "limit"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
