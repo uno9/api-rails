@@ -4,8 +4,8 @@ module Api
       before_action :set_post, only: [:show, :update, :destroy]
 
       def index
-        posts = Post.order(created_at: :desc)
-        render json: { status: 'SUCCESS', message: 'Loaded posts', data: posts }
+        @posts = Post.order(created_at: :desc)
+        render json: { status: 'SUCCESS', message: 'Loaded posts', data: @posts }
       end
 
       def show
@@ -14,10 +14,11 @@ module Api
 
       def create
         post = Post.new(post_params)
+
         if post.save
-          render json: { status: 'SUCCESS', data: post }
+          render json: { status: 'SUCCESS', message: 'Post title', data: post }
         else
-          render json: { status: 'ERROR', data: post.errors }
+          render json: { status: 'ERROR', message: 'Post title', data: post.errors }
         end
       end
 
