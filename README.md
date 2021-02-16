@@ -29,3 +29,5 @@ Please STAR this repository if this software helped you!
 ## 📝 Reference
 - [Railsで超簡単API](https://qiita.com/k-penguin-sato/items/adba7a1a1ecc3582a9c9)
 - [ストロングパラメータ](https://techblog.kyamanak.com/entry/2017/08/29/012909)
+- [rack cors](https://mintaku-blog.net/rails-cors/)
+- [rails apiモード設定 qiita](https://qiita.com/sugo/items/9c5f9cc5d88e6d7efa2d)
