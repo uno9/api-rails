@@ -2,7 +2,9 @@ class Api::V1::PostsController < ApplicationController
 
   def index
     @post = Post.all
-    render json: @post
+    render json: {
+      data: @post
+    }
   end
 
   def show
